@@ -29,3 +29,4 @@ dist
 # E quaisquer outros arquivos de cache que o Vite cria, como:
 .vscode
 .env
+.vercel

@@ -45,13 +45,11 @@ const ProjectDetailModal = ({ project, onClose }) => {
             {/* Problema e Solução (A História) */}
             <div>
               <h4 className="text-xl font-semibold text-white mb-2">Problema Resolvido:</h4>
-              {/* 🚨 CLASSE ADICIONADA: text-justify */}
               <p className="text-gray-400 text-justify">{fullProject.details?.problem}</p> 
             </div>
             
             <div>
               <h4 className="text-xl font-semibold text-white mb-2">Minha Solução:</h4>
-              {/* 🚨 CLASSE ADICIONADA: text-justify */}
               <p className="text-gray-400 text-justify">{fullProject.details?.solution}</p>
             </div>
 
@@ -76,8 +74,6 @@ const ProjectDetailModal = ({ project, onClose }) => {
                     text-base font-medium 
                     text-indigo-300
                     ${fullProject.details.challenges.length <= 1 ? '' : 'pt-4'}
-                    
-                    /* 🚨 CLASSE ADICIONADA AQUI TAMBÉM */
                     text-justify
                   `}>
                 {fullProject.details.challenges[fullProject.details.challenges.length - 1]}
