@@ -16,7 +16,7 @@ const ProjectCard = ({ project, onSelect }) => {
         transition duration-300 transform hover:scale-[1.03] hover:shadow-indigo-500/50 
         border border-gray-700
       "
-      onClick={() => onSelect(project)} // 🚨 Ação de clique: passa o projeto para o App
+      onClick={() => onSelect(project)} //Ação de clique: passa o projeto para o App
     >
       
       {/* Imagem/Miniatura do Projeto */}
@@ -24,6 +24,7 @@ const ProjectCard = ({ project, onSelect }) => {
         src={project.image || 'https://via.placeholder.com/600x400?text=Projeto'} 
         alt={`Miniatura do projeto ${project.title}`} 
         className="w-full h-48 object-cover" 
+        loading='lazy'
       />
       
       <div className="p-5">

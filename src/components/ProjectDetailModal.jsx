@@ -20,8 +20,9 @@ const ProjectDetailModal = ({ project, onClose }) => {
       
       {/* O Corpo do Modal - Evita fechar ao clicar dentro */}
       <div 
-        className="bg-gray-800 rounded-lg shadow-2xl w-full max-w-4xl max-h-[90vh] overflow-y-auto"
-        onClick={e => e.stopPropagation()} // Impede o fechamento
+        // 🚨 CLASSE ATUALIZADA: Adicionamos o 'scrollbar-hide' (e a mágica extra no CSS)
+        className="bg-gray-800 rounded-lg shadow-2xl w-full max-w-4xl max-h-[90vh] overflow-y-scroll scrollbar-hide"
+        onClick={e => e.stopPropagation()} 
       >
         <div className="p-8">
           
@@ -65,11 +66,31 @@ const ProjectDetailModal = ({ project, onClose }) => {
             {/* Desafios Técnicos (Onde o Sênior se destaca) */}
             <div className="bg-gray-700/30 p-4 rounded-lg">
               <h4 className="text-xl font-semibold text-white mb-2">Desafios Técnicos e Aprendizados:</h4>
-              <ul className="list-disc list-inside space-y-1 text-gray-400">
-                {fullProject.details?.challenges?.map((challenge, index) => (
-                    <li key={index}>{challenge}</li>
-                ))}
-              </ul>
+              
+              {/* Definição de Arrays para Renderização */}
+              {/* O array para os bullets (todos, exceto o último) */}
+              {/* O `|| []` garante que, se for nulo, seja um array vazio */}
+              {fullProject.details?.challenges?.length > 1 && (
+                <ul className="list-disc list-inside space-y-1 text-gray-400">
+                  {fullProject.details.challenges.slice(0, -1).map((challenge, index) => (
+                      <li key={index}>{challenge}</li>
+                  ))}
+                </ul>
+              )}
+
+              {/* 🚨 ÚLTIMO ITEM: Renderizado EXCLUSIVAMENTE como Parágrafo de Encerramento */}
+              {fullProject.details?.challenges?.length > 0 && (
+                  <p className="
+                    mt-4 pt-3 
+                    border-t border-gray-600 
+                    text-base font-medium 
+                    text-indigo-300
+                    /* Aplica margem superior condicionalmente, se não houver lista */
+                    ${fullProject.details.challenges.length <= 1 ? '' : 'pt-4'} 
+                  ">
+                    {fullProject.details.challenges[fullProject.details.challenges.length - 1]}
+                  </p>
+              )}
             </div>
           </div>
           

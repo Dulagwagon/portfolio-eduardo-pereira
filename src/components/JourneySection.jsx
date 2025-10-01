@@ -19,12 +19,12 @@ const JourneySection = () => {
           {/* Coluna 1: Imagem de Perfil */}
           <div className="w-full lg:w-1/4 flex-shrink-0 mb-8 lg:mb-0 text-center">
             <img
-              src="/images/eduardo-perfil.jpg"
+              src="/src/images/eduardo-perfil.jpg"
               alt="Foto de perfil de Eduardo Pereira"
-              className="w-48 h-48 rounded-full object-cover mx-auto shadow-xl border-4 border-indigo-600"
+              className="w-48 h-48 rounded-full object-cover mx-auto shadow-xl border-4 border-indigo-600 object-top" 
             />
             <div className="mt-4 text-xl font-semibold text-gray-300">Eduardo Pereira</div>
-            <div className="text-indigo-400">Full Stack Developer</div>
+            <div className="text-indigo-400">Futuro Full Stack Developer</div>
           </div>
 
           {/* Coluna 2: A Narrativa da Trajetória - Classe text-justify aplicada aqui! */}
