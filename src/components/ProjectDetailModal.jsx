@@ -40,36 +40,26 @@ const ProjectDetailModal = ({ project, onClose }) => {
           {/* Seção de Conteúdo Detalhado (Depth of Work) */}
           <div className="space-y-6 text-gray-300">
             
-            {/* Pilha de Tecnologias */}
-            <div className="pb-4">
-              <h4 className="text-xl font-semibold text-white mb-2">Tecnologias Utilizadas:</h4>
-              <div className="flex flex-wrap gap-2">
-                {fullProject.mainTags.map((tag) => (
-                  <span key={tag} className="bg-indigo-700/50 text-white text-sm font-medium px-4 py-1 rounded-lg">
-                    {tag}
-                  </span>
-                ))}
-              </div>
-            </div>
+            {/* ... (Pilha de Tecnologias) ... */}
 
             {/* Problema e Solução (A História) */}
             <div>
               <h4 className="text-xl font-semibold text-white mb-2">Problema Resolvido:</h4>
-              <p className="text-gray-400">{fullProject.details?.problem}</p>
+              {/* 🚨 CLASSE ADICIONADA: text-justify */}
+              <p className="text-gray-400 text-justify">{fullProject.details?.problem}</p> 
             </div>
             
             <div>
               <h4 className="text-xl font-semibold text-white mb-2">Minha Solução:</h4>
-              <p className="text-gray-400">{fullProject.details?.solution}</p>
+              {/* 🚨 CLASSE ADICIONADA: text-justify */}
+              <p className="text-gray-400 text-justify">{fullProject.details?.solution}</p>
             </div>
 
-            {/* Desafios Técnicos (Onde o Sênior se destaca) */}
+            {/* Desafios Técnicos (Lista de Bullets) */}
             <div className="bg-gray-700/30 p-4 rounded-lg">
               <h4 className="text-xl font-semibold text-white mb-2">Desafios Técnicos e Aprendizados:</h4>
               
-              {/* Definição de Arrays para Renderização */}
-              {/* O array para os bullets (todos, exceto o último) */}
-              {/* O `|| []` garante que, se for nulo, seja um array vazio */}
+              {/* Bullets (Não precisam de text-justify) */}
               {fullProject.details?.challenges?.length > 1 && (
                 <ul className="list-disc list-inside space-y-1 text-gray-400">
                   {fullProject.details.challenges.slice(0, -1).map((challenge, index) => (
@@ -78,17 +68,19 @@ const ProjectDetailModal = ({ project, onClose }) => {
                 </ul>
               )}
 
-              {/* 🚨 ÚLTIMO ITEM: Renderizado EXCLUSIVAMENTE como Parágrafo de Encerramento */}
+              {/* Parágrafo de Encerramento (Requer justificação, se for um texto longo) */}
               {fullProject.details?.challenges?.length > 0 && (
-                  <p className="
+                  <p className={`
                     mt-4 pt-3 
                     border-t border-gray-600 
                     text-base font-medium 
                     text-indigo-300
-                    /* Aplica margem superior condicionalmente, se não houver lista */
-                    ${fullProject.details.challenges.length <= 1 ? '' : 'pt-4'} 
-                  ">
-                    {fullProject.details.challenges[fullProject.details.challenges.length - 1]}
+                    ${fullProject.details.challenges.length <= 1 ? '' : 'pt-4'}
+                    
+                    /* 🚨 CLASSE ADICIONADA AQUI TAMBÉM */
+                    text-justify
+                  `}>
+                {fullProject.details.challenges[fullProject.details.challenges.length - 1]}
                   </p>
               )}
             </div>
