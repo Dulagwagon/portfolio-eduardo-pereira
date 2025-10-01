@@ -22,3 +22,10 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Arquivos ignorados pelo Git
+node_modules
+dist
+# E quaisquer outros arquivos de cache que o Vite cria, como:
+.vscode
+.env
