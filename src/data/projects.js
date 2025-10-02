@@ -6,7 +6,7 @@ export const projectData = [
   {
     id: 1,
     title: "Realtime USD Monitor 🤑",
-    image: "src/images/realtimeusd.png", // Certifique-se que o caminho da imagem existe!
+    image: "/realtimeusd.png", // Certifique-se que o caminho da imagem existe!
     mainTags: ["Python", "Real-Time", "Data-Monitoring", "REST-API", "Finance", "Exchange-Rate", "Automation", "CSV"],
 
     // Opcional, mas útil: uma breve descrição para o Card
@@ -24,7 +24,7 @@ export const projectData = [
   {
     id: 2,
     title: "Portfólio pessoal - Node.js - React",
-    image: "src/images/portfolio.png",
+    image: "/portfolio.png",
     mainTags: ["React", "Tailwind-CSS", "Vite", "JavaScript", "Full-Stack", "Clean-Architecture", "Responsive-Design", "Node.js", "Redux"],
     shortDescription: "Portfólio Pessoal moderno construído com React (Hooks/Redux) e estilizado com Tailwind CSS. Demonstra habilidades Full Stack, com foco em arquitetura escalável e design totalmente responsivo.",
     details: {
@@ -38,7 +38,7 @@ export const projectData = [
   {
     id: 3,
     title: "Hobby - Pygame: Criminal Hunt",
-    image: "src/images/portfolio.png",
+    image: "/portfolio.png",
     mainTags: ["Python", "Pygame", "Game-Development", "Beat-em-up", "2D-Game", "OOP","Retro-Gaming"],
     shortDescription: "Projeto hobby de Desenvolvimento de Jogos (Game Dev): Um jogo estilo Beat 'em up 2D inspirado nos clássicos dos anos 90. Construído totalmente em Python utilizando a biblioteca Pygame, demonstrando proficiência em lógica de jogo, física e OOP.",
     details: {
