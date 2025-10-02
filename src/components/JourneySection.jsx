@@ -19,7 +19,7 @@ const JourneySection = () => {
           {/* Coluna 1: Imagem de Perfil */}
           <div className="w-full lg:w-1/4 flex-shrink-0 mb-8 lg:mb-0 text-center">
             <img
-              src="/src/images/eduardo-perfil.jpg"
+              src="/eduardo-perfil.jpg"
               alt="Foto de perfil de Eduardo Pereira"
               className="w-48 h-48 rounded-full object-cover mx-auto shadow-xl border-4 border-indigo-600 object-top" 
             />
