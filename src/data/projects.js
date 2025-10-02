@@ -31,7 +31,7 @@ export const projectData = [
       problem: "O desafio era criar uma plataforma única e moderna que servisse como vitrine profissional digital, capaz de exibir minhas habilidades técnicas de Desenvolvedor Full Stack de forma organizada e com alto padrão de design. Era necessário ir além de um simples currículo, oferecendo uma experiência de usuário fluida e responsiva que demonstrasse proficiência em tecnologias de ponta.",
       solution: "Desenvolvi um Portfólio Pessoal como uma Single Page Application (SPA) de alta performance. A solução foi construída utilizando React para o frontend, priorizando a componentização e o gerenciamento de estado (via Hooks/Context/Redux). Para garantir um design limpo e de fácil manutenção, utilizei o Tailwind CSS para estilização, resultando em uma interface totalmente responsiva e otimizada para todas as telas.",
       challenges: ["React;", "Tailwind-CSS;", "Vite;", "JavaScript;", "Full-Stack;", "Clean-Architecture;", "Responsive-Design.", "Este projeto exigiu a integração do frontend React com o framework de estilização Tailwind CSS para criar uma Single Page Application (SPA) de alto padrão. O desafio foi garantir um design totalmente responsivo e otimizar a Web Performance, ao mesmo tempo que adotei uma arquitetura limpa e modular. A solução final é uma vitrine Full Stack que demonstra proficiência em soluções modernas e escaláveis."],
-      liveLink: "https://app.ecoconnect.com",
+      liveLink: "https://portfolio-eduardo-pereira-fawn.vercel.app",
       githubLink: "https://github.com/Dulagwagon/portfolio-eduardo-pereira",
     }
   },
