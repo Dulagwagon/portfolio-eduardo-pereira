@@ -36,7 +36,26 @@ export const projectData = [
     }
   },
   {
-    id: 3,
+    id: 4, 
+    title: "Coletor de Dados de E-commerce (Web Scraper)",
+    image: "images/scraper.png", 
+    mainTags: ["Python", "Scrapy", "Async I/O", "JSON/CSV"], 
+    shortDescription: "Motor de Web Scraping customizado e assíncrono, desenvolvido com Scrapy, para coleta de dados de produtos e avaliações em grandes varejistas online.",
+    
+    details: {
+      problem: "A falta de dados estruturados e atualizados sobre a concorrência e a opinião do consumidor dificultava a análise de mercado e a precificação dinâmica.",
+      solution: "Desenvolvimento de um spider customizado usando o framework Scrapy em Python. A arquitetura assíncrona garante alta eficiência na coleta de milhares de pontos de dados, que são então estruturados em JSON para processamento posterior ou exportação para CSV.",
+      challenges: [
+        "Implementação de rotação de proxies e User-Agents para evitar bloqueio por bot-detection da plataforma alvo.",
+        "Padronização e limpeza de dados (Data Cleaning) complexos, incluindo tratamento de strings inconsistentes antes da exportação.",
+        "O principal desafio foi a arquitetura legal e ética. Assegurei que a solução respeitasse estritamente o `robots.txt` do site alvo e as políticas de uso da plataforma, garantindo a integridade e legalidade de toda a coleta de dados."
+      ],
+      liveLink: "", 
+      githubLink: "", 
+    }
+  },
+  {
+    id: 5,
     title: "Hobby - Pygame: Criminal Hunt",
     image: "images/portfolio.png",
     mainTags: ["Python", "Pygame", "Game-Development", "Beat-em-up", "2D-Game", "OOP","Retro-Gaming"],

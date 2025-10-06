@@ -41,11 +41,10 @@ const SkillsAndContact = () => {
 
                     <div className="flex justify-center space-x-6">
                         
-                        {/* 🚨 CTA para E-mail CORRIGIDO: Adicionado target="_blank" */}
                         <a 
-                            href="mailto:seu.email@exemplo.com" 
+                            href="mailto:eduardo.pereira@sme.prefeitura.sp.gov.br" 
                             target="_blank" 
-                            rel="noopener noreferrer" // 🚨 Melhor prática de segurança
+                            rel="noopener noreferrer"
                             className="flex items-center space-x-2 bg-white text-indigo-600 font-bold py-3 px-6 rounded-full transition duration-300 hover:bg-gray-200"
                         >
                             <FaEnvelope className="text-xl" />
@@ -53,7 +52,7 @@ const SkillsAndContact = () => {
                         </a>
                         
                         {/* CTA para LinkedIn (mantido) */}
-                        <a href="https://linkedin.com/in/seuperfil" target="_blank" rel="noopener noreferrer" className="flex items-center space-x-2 bg-gray-800 text-white font-bold py-3 px-6 rounded-full transition duration-300 hover:bg-gray-700">
+                        <a href="https://linkedin.com/in/edupereira84" target="_blank" rel="noopener noreferrer" className="flex items-center space-x-2 bg-gray-800 text-white font-bold py-3 px-6 rounded-full transition duration-300 hover:bg-gray-700">
                             <FaLinkedin className="text-xl" />
                             <span>LinkedIn</span>
                         </a>
