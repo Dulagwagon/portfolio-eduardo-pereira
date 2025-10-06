@@ -17,7 +17,7 @@ export const projectData = [
       problem: "O processo de monitoramento de cotações em tempo real é ineficiente e propenso a erros quando realizado manualmente. Isso requer o acesso repetitivo a múltiplas fontes e a intervenção humana para registrar o histórico dos dados, resultando em um sistema de monitoramento não personalizável, não confiável e com alto custo de tempo.",
       solution: "Desenvolveu-se um script Python automatizado para centralizar a coleta de dados de cotações em tempo real através de uma REST API especializada. A solução não apenas automatiza a consulta de forma programável, mas também garante a integridade dos dados através do registro persistente e estruturado em formato CSV, com a personalização completa do intervalo de monitoramento pelo usuário.",
       challenges: ["Integração com API externa;", "Tratamento de erros de rede;", "Histórico de dados confiável;", "Prevenção de duplicidades;", "Controle de Frequência;", "Gerenciamento de Credenciais.", "O principal desafio foi construir uma solução robusta de data collection, lidando com a integração e tratamento de erros de uma REST API externa. Fui responsável por garantir a persistência e integridade dos dados históricos no arquivo CSV e implementar a automação do script para que o monitoramento funcionasse de forma contínua em tempo real."],
-      liveLink: "https://app.ecoconnect.com",
+      //liveLink: "https://app.ecoconnect.com",
       githubLink: "https://github.com/Dulagwagon/realtime-usd-monitor",
     }
   },
@@ -36,7 +36,7 @@ export const projectData = [
     }
   },
   {
-    id: 4, 
+    id: 3, 
     title: "Coletor de Dados de E-commerce (Web Scraper)",
     image: "images/scraper.png", 
     mainTags: ["Python", "Scrapy", "Async I/O", "JSON/CSV"], 
@@ -50,12 +50,12 @@ export const projectData = [
         "Padronização e limpeza de dados (Data Cleaning) complexos, incluindo tratamento de strings inconsistentes antes da exportação.",
         "O principal desafio foi a arquitetura legal e ética. Assegurei que a solução respeitasse estritamente o `robots.txt` do site alvo e as políticas de uso da plataforma, garantindo a integridade e legalidade de toda a coleta de dados."
       ],
-      liveLink: "", 
-      githubLink: "", 
+      //liveLink: "", 
+      githubLink: "https://github.com/Dulagwagon/web-scraper", 
     }
   },
   {
-    id: 5,
+    id: 4,
     title: "Hobby - Pygame: Criminal Hunt",
     image: "images/portfolio.png",
     mainTags: ["Python", "Pygame", "Game-Development", "Beat-em-up", "2D-Game", "OOP","Retro-Gaming"],
@@ -64,7 +64,7 @@ export const projectData = [
       problem: "O desafio era traduzir a jogabilidade dinâmica e complexa de um jogo estilo Beat 'em up 2D (que exige animação, combate e movimentação precisa) em um ambiente de desenvolvimento de hobby como o Pygame. Era crucial desenvolver uma arquitetura de código sólida capaz de gerenciar múltiplos elementos em tela, estados de jogo e interações de combate fluidas.",
       solution: "Desenvolvi o 'Criminal Hunt' utilizando a abordagem Orientada a Objetos (OOP) em Python, onde cada entidade (jogador, inimigos, armas) é uma classe distinta. A solução implementa um loop de jogo eficiente para gerenciar a renderização de gráficos, o áudio e a detecção de colisões, resultando em um protótipo funcional de jogo 2D arcade que captura a essência dos clássicos dos anos 90.",
       challenges: ["Python;", "Pygame;", "Game-Development;", "Beat-em-up;", "2D-Game;", "OOP;", "Retro-Gaming.", "Detecção e Resposta a Colisão (Collision Detection): Implementar e otimizar a lógica de detecção de colisões entre os sprites (personagens, ataques, cenário) para garantir interações de combate e física precisas e justas. Gerenciamento de Estados e Animações: Desenvolver um sistema robusto para gerenciar os diferentes estados do jogador e dos inimigos (parado, andando, atacando, sofrendo dano), garantindo transições de animação suaves sem falhas visuais (glitches). Sistema de Input e Controle: Criar um input handler (manipulador de entrada) eficiente para processar comandos complexos e combinados (ex: soco, chute, pulo) que exigem rápida resposta para a jogabilidade beat 'em up."],
-      liveLink: "https://app.ecoconnect.com",
+      //liveLink: "https://app.ecoconnect.com",
       githubLink: "https://github.com/Dulagwagon/portfolio-eduardo-pereira",
     }
   },
