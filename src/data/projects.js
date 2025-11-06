@@ -68,5 +68,60 @@ export const projectData = [
       githubLink: "https://github.com/Dulagwagon/portfolio-eduardo-pereira",
     }
   },
+  {
+    id: 5,
+    title: "Dashboard Power BI: Painel Nacional de Acidentes Rodoviários",
+    image: "images/PBI.png",
+    mainTags: ["Power BI", "DAX", "Power Query", "M Language", "Data Modeling", "Data Visualization", "ETL", "KPI", "Dashboard Design", "Data Analysis", "Interactive Reports"],
+    shortDescription: "Dashboard interativo desenvolvido no Power BI para análise de acidentes rodoviários em território nacional. O painel integra dados públicos, visualizações geoespaciais e indicadores dinâmicos, permitindo insights sobre causas, regiões críticas e evolução temporal dos acidentes.",
+    details: {
+      problem: "O desafio era consolidar e interpretar grandes volumes de dados públicos de acidentes rodoviários provenientes de diferentes fontes e formatos. A ausência de padronização, a falta de integração entre os registros estaduais e federais, e a necessidade de comunicar informações complexas de forma visual e acessível exigiam uma solução analítica robusta e bem estruturada.",
+      solution: "A solução foi desenvolver um dashboard interativo no Power BI capaz de unificar e visualizar dados nacionais de acidentes rodoviários. O projeto utilizou modelagem de dados otimizada no Power Query, criação de medidas e indicadores em DAX, e aplicação de segmentações dinâmicas para permitir análises por estado, tipo de ocorrência, período e gravidade. O design foi pensado para apresentar insights de forma clara e intuitiva, auxiliando a tomada de decisão e a compreensão dos padrões de acidentes em todo o território brasileiro.",
+      challenges: [
+        "Integração de múltiplas fontes de dados com diferentes estruturas e formatos;",
+        "Criação de medidas e KPIs complexos utilizando DAX;", "Garantia de performance e responsividade do dashboard em consultas com grande volume de dados;",
+        "Aplicação de princípios de Data Storytelling para comunicar padrões e tendências com clareza;",
+        "Padronização visual e hierarquia informacional, assegurando consistência entre painéis;",
+        "Construção de filtros e segmentações dinâmicas sem comprometer a fluidez da navegação.",
+        "Esse projeto exigiu o domínio da linguagem DAX e um olhar analítico voltado para a experiência do usuário. O maior desafio foi transformar um grande volume de informações em um painel visualmente coeso, intuitivo e capaz de gerar insights relevantes sobre a segurança viária no Brasil."
+      ], 
+      liveLink: "https://app.powerbi.com/view?r=eyJrIjoiMzRiZGQyMzktMTcwYi00MDdhLWI5MmEtZTgxMTdlNmVjZDhhIiwidCI6IjY1NWFhNjFkLTVkY2ItNDE4Mi05N2YxLTJmNTQ5MTlkZTBjZiJ9",
+      //githubLink: "https://github.com/Dulagwagon/portfolio-eduardo-pereira",
+    }
+  },
+    {
+    id: 6,
+    title: "SIGAC - Sistema Integrado de Gestão de Acervo",
+    image: "images/PBI.png",
+      mainTags: [
+    "Django",
+    "Python",
+    "Vite",
+    "Bootstrap",
+    "SQLite",
+    "Full-Stack",
+    "CRUD"
+  ],
+    shortDescription:
+    "Sistema completo de gestão de acervo literário, desenvolvido com Django no backend e Vite + Bootstrap no frontend. O SIGAC permite cadastrar, organizar e consultar obras, autores e categorias de forma prática e intuitiva.",
+    details: {
+      problem:
+      "O desafio era criar uma solução acessível e eficiente para o gerenciamento de acervos literários, permitindo organização, busca e controle de obras. Além disso, era necessário integrar frontend moderno com backend robusto utilizando tecnologias distintas.",
+
+    solution:
+      "A solução foi a construção de um sistema full-stack utilizando Django como base para regras de negócio e persistência de dados, enquanto o frontend em Vite + Bootstrap fornece uma interface rápida, responsiva e moderna. O sistema oferece CRUD completo, validação de formulários, paginação e uma arquitetura escalável.",
+
+    challenges: [
+      "Integração entre Django e frontend moderno (Vite);",
+      "Modelagem de dados eficiente no SQLite;",
+      "Implementação de CRUD robusto com validações;",
+      "Criação de interface responsiva com Bootstrap;",
+      "Configuração de rotas e comunicação entre camadas.",
+      "Esse projeto exigiu a integração harmoniosa entre um backend robusto em Django e um frontend moderno em Vite, além de uma modelagem de dados sólida para garantir consistência e escalabilidade. O maior desafio foi equilibrar arquitetura, usabilidade e organização do acervo, transformando requisitos funcionais em uma aplicação prática, clara e eficiente para gerenciamento literário."
+    ],
+      liveLink: "https://app.powerbi.com/view?r=eyJrIjoiMzRiZGQyMzktMTcwYi00MDdhLWI5MmEtZTgxMTdlNmVjZDhhIiwidCI6IjY1NWFhNjFkLTVkY2ItNDE4Mi05N2YxLTJmNTQ5MTlkZTBjZiJ9",
+      //githubLink: "https://github.com/Dulagwagon/portfolio-eduardo-pereira",
+    }
+  },
   // Adicione mais projetos aqui...
 ];
