@@ -35,7 +35,7 @@ const ProjectCard = ({ project, onSelect }) => {
         {/* Descrição Curta */}
         <p className="text-gray-400 text-sm mb-4">{project.shortDescription}</p>
 
-        {/* Tags de Tecnologia (O Foco do Recrutador) */}
+        {/* Tags de Tecnologia*/}
         <div className="flex flex-wrap gap-2">
           {project.mainTags.map((tag) => (
             <span key={tag} className="
