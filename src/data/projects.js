@@ -92,7 +92,7 @@ export const projectData = [
     {
     id: 6,
     title: "SIGAC - Sistema Integrado de Gestão de Acervo",
-    image: "images/PBI.png",
+    image: "images/sigac.png",
       mainTags: [
     "Django",
     "Python",
